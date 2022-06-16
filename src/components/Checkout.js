@@ -9,7 +9,7 @@ function Checkout(props) {
         setProductsInCart(
             props.products.filter(product => product.quantityInCart > 0)
         );
-    }, []);
+    }, [props.products]);
 
     return productsInCart.length > 0 ? (
         <div>

@@ -5,19 +5,7 @@ function Product(props) {
             <div>{props.product.name}</div>
             <div>{props.product.price}</div>
             <div>
-                <div>Quantity: </div>
-                <input
-                    type="number"
-                    min="1"
-                    max="10"
-                    value={props.product.quantityInCart}
-                    onChange={e =>
-                        props.handleQuantityChange(
-                            parseInt(e.target.value, 10),
-                            props.product
-                        )
-                    }
-                />
+                <div>Quantity: {props.product.quantityInCart}</div>
                 <div>
                     <button
                         onClick={() =>

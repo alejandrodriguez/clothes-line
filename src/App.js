@@ -64,6 +64,7 @@ function App() {
             throw new Error("Product could not be found.");
         }
         let updatedProducts = [...products];
+        updatedProducts[index] = { ...product };
         if (typeof numOrOperation === "number") {
             updatedProducts[index].quantityInCart = numOrOperation;
         } else if (numOrOperation === "add") {
@@ -74,6 +75,7 @@ function App() {
                 updatedProducts[index].quantityInCart - 1;
         }
         setProducts(updatedProducts);
+        console.log(updatedProducts[index].quantityInCart);
     }
 
     function getProductsInCart() {
