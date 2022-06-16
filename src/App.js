@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 import Shop from "./components/Shop";
 import Checkout from "./components/Checkout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -87,7 +88,7 @@ function App() {
             <div className="App">
                 <Navbar />
                 <Routes>
-                    {/* <Route path="/" element={<Home />} /> */}
+                    <Route path="/" element={<Home />} />
                     <Route
                         path="/shop"
                         element={
