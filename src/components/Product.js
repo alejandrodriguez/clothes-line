@@ -10,7 +10,7 @@ function Product(props) {
                     type="number"
                     min="1"
                     max="10"
-                    value={props.product.quantity}
+                    value={props.product.quantityInCart}
                     onChange={e =>
                         props.handleQuantityChange(
                             parseInt(e.target.value, 10),

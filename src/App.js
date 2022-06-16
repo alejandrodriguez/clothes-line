@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Shop from "./components/Shop";
+import Checkout from "./components/Checkout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import hatsrc from "./product-images/hat.jpg";
 import shirtsrc from "./product-images/shirt.jpg";
@@ -59,7 +60,6 @@ function App() {
 
     function handleQuantityChange(numOrOperation, product) {
         const index = products.indexOf(product);
-        console.log(product);
         if (index === -1) {
             throw new Error("Product could not be found.");
         }
@@ -74,6 +74,10 @@ function App() {
                 updatedProducts[index].quantityInCart - 1;
         }
         setProducts(updatedProducts);
+    }
+
+    function getProductsInCart() {
+        return products.filter(product => product.quantityInCart > 0);
     }
 
     return (
@@ -91,7 +95,15 @@ function App() {
                             />
                         }
                     />
-                    {/* <Route path="/checkout" element={<Checkout />} /> */}
+                    <Route
+                        path="/checkout"
+                        element={
+                            <Checkout
+                                handleQuantityChange={handleQuantityChange}
+                                products={products}
+                            />
+                        }
+                    />
                 </Routes>
             </div>
         </BrowserRouter>
