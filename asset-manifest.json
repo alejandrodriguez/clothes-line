@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.40132fd6.css",
+    "main.js": "/shopping-cart/static/js/main.75a23495.js",
+    "static/media/shoes.jpg": "/shopping-cart/static/media/shoes.20909fec291b7abfca88.jpg",
+    "static/media/summer.jpg": "/shopping-cart/static/media/summer.e622d734bcf8af3bb732.jpg",
+    "static/media/formal.jpg": "/shopping-cart/static/media/formal.a6fd8d1f489a66185d3b.jpg",
+    "static/media/shirt.jpg": "/shopping-cart/static/media/shirt.f38a7165d3e01615c685.jpg",
+    "static/media/suit.jpg": "/shopping-cart/static/media/suit.fa562ee0721612a42d93.jpg",
+    "static/media/shoes-group.jpg": "/shopping-cart/static/media/shoes-group.7fcac0ada96b4c3b8aac.jpg",
+    "static/media/friends.jpg": "/shopping-cart/static/media/friends.84e958bcbf60a642aeb1.jpg",
+    "static/media/watch.jpg": "/shopping-cart/static/media/watch.3c93c29727e96a21b65f.jpg",
+    "static/media/pants.jpg": "/shopping-cart/static/media/pants.52e9fe123ee28f85c920.jpg",
+    "static/media/hat.jpg": "/shopping-cart/static/media/hat.8c3897df1046968567f6.jpg",
+    "index.html": "/shopping-cart/index.html",
+    "static/media/cart-icon.svg": "/shopping-cart/static/media/cart-icon.5206e9f0dfcc2598d95af213e249453f.svg",
+    "main.40132fd6.css.map": "/shopping-cart/static/css/main.40132fd6.css.map",
+    "main.75a23495.js.map": "/shopping-cart/static/js/main.75a23495.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40132fd6.css",
+    "static/js/main.75a23495.js"
+  ]
+}
