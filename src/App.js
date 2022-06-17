@@ -76,17 +76,16 @@ function App() {
                 updatedProducts[index].quantityInCart - 1;
         }
         setProducts(updatedProducts);
-        console.log(updatedProducts[index].quantityInCart);
     }
 
     function getProductsInCart() {
-        return products.filter(product => product.quantityInCart > 0);
+        return products.filter(product => product.quantityInCart > 0).length;
     }
 
     return (
         <BrowserRouter>
             <div className="App">
-                <Navbar />
+                <Navbar productsInCart={getProductsInCart()} />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route

@@ -1,5 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 img {
     width: 500px;
     height: 500px;
     object-fit: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    padding: 20px 100px;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: white;
+}
+
+.cart-icon {
+    flex: 1;
+    text-align: right;
 }
