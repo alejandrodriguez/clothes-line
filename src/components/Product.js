@@ -1,6 +1,6 @@
 function Product(props) {
     return props.inShoppingCart ? (
-        <div>
+        <div className="Product-In-Cart">
             <img
                 src={props.product.src}
                 alt={props.product.name}
@@ -8,35 +8,30 @@ function Product(props) {
             />
             <div>{props.product.name}</div>
             <div>${props.product.price}</div>
-            <div>
+            <div className="quantity-wrapper">
+                <button
+                    onClick={() =>
+                        props.handleQuantityChange("subtract", props.product)
+                    }
+                >
+                    &#8722;
+                </button>
                 <div>Quantity: {props.product.quantityInCart}</div>
-                <div>
-                    <button
-                        onClick={() =>
-                            props.handleQuantityChange("add", props.product)
-                        }
-                    >
-                        &#43;
-                    </button>
-                    <button
-                        onClick={() =>
-                            props.handleQuantityChange(
-                                "subtract",
-                                props.product
-                            )
-                        }
-                    >
-                        &#8722;
-                    </button>
-                    <button
-                        onClick={() =>
-                            props.handleQuantityChange(0, props.product)
-                        }
-                    >
-                        Remove
-                    </button>
-                </div>
+
+                <button
+                    onClick={() =>
+                        props.handleQuantityChange("add", props.product)
+                    }
+                >
+                    &#43;
+                </button>
             </div>
+            <button
+                onClick={() => props.handleQuantityChange(0, props.product)}
+                className="remove-btn"
+            >
+                Remove
+            </button>
         </div>
     ) : (
         <div className="Product">

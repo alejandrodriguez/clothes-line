@@ -20,7 +20,7 @@ function Navbar(props) {
                             className="cart-icon"
                         />
                     </NavLink>
-                    <span className="products-in-cart">
+                    <span className="in-cart-counter">
                         {props.productsInCart}
                     </span>
                 </div>

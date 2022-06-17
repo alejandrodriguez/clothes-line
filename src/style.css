@@ -13,6 +13,11 @@ img {
     object-fit: cover;
 }
 
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
 .nav-wrapper {
     width: 100%;
     background-color: black;
@@ -48,7 +53,7 @@ nav a:visited {
 .store-title {
     flex: 2;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -66,38 +71,69 @@ nav a:visited {
 }
 
 .Product {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: fit-content;
+    gap: 5px;
     margin: 100px auto;
+    width: fit-content;
+}
+
+.Product,
+.Product-In-Cart {
+    display: flex;
     box-shadow: 5px 5px 20px;
     padding: 40px 30px;
+}
+
+.Product-In-Cart {
+    margin: 50px auto;
+    width: max(50vw, 700px);
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.Product-In-Cart img {
+    width: 150px;
+    height: 150px;
+}
+
+.quantity-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     gap: 5px;
 }
 
-button {
-    padding: 5px 10px;
+.Product-In-Cart {
+    font-size: 20px;
 }
 
-.shirt {
-    object-position: 0px -90px;
+.quantity-wrapper button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
 }
 
-.pants {
-    object-position: 0px -70px;
+.remove-btn {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 3px;
 }
 
-.shoes {
-    object-position: -20px 0px;
+.remove-btn:hover {
+    background-color: rgb(50, 50, 50);
 }
 
-.suit {
-    object-position: 0px -80px;
-}
-
-.products-in-cart {
+.in-cart-counter {
     display: inline-flex;
     justify-content: center;
     align-items: center;
