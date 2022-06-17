@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import cart_icon from "../images/cart-icon.svg";
+import cart_icon from "../images/icons/cart-icon.svg";
 
 function Navbar(props) {
     return (

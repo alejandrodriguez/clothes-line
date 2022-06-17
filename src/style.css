@@ -7,7 +7,7 @@
     font-family: "Palanquin", sans-serif;
 }
 
-img {
+.Shop img {
     width: 500px;
     height: 500px;
     object-fit: cover;
@@ -146,4 +146,30 @@ nav a:visited {
     height: 16px;
     position: relative;
     top: 10px;
+}
+
+.checkout-no-items {
+    margin-top: 40px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.swiper {
+    width: 1200px;
+    box-shadow: 5px 5px 25px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.swiper img {
+    width: 1200px;
+}
+
+.Home h1 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 50px;
 }

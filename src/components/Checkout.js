@@ -23,7 +23,7 @@ function Checkout(props) {
             ))}
         </div>
     ) : (
-        <div>
+        <div className="checkout-no-items">
             No items in shopping cart. Visit our <Link to="/shop">shop</Link>{" "}
             now to add some!
         </div>

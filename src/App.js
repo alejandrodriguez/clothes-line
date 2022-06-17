@@ -4,12 +4,12 @@ import Home from "./components/Home";
 import Shop from "./components/Shop";
 import Checkout from "./components/Checkout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import hatsrc from "./images/hat.jpg";
-import shirtsrc from "./images/shirt.jpg";
-import pantssrc from "./images/pants.jpg";
-import shoessrc from "./images/shoes.jpg";
-import suitsrc from "./images/suit.jpg";
-import watchsrc from "./images/watch.jpg";
+import hatsrc from "./images/products/hat.jpg";
+import shirtsrc from "./images/products/shirt.jpg";
+import pantssrc from "./images/products/pants.jpg";
+import shoessrc from "./images/products/shoes.jpg";
+import suitsrc from "./images/products/suit.jpg";
+import watchsrc from "./images/products/watch.jpg";
 
 function App() {
     const productsData = [

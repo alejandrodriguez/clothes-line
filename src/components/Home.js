@@ -1,7 +1,10 @@
+import Carousel from "./Carousel";
+
 function Home() {
     return (
-        <div>
-            <h1>Clothes Line Store</h1>
+        <div className="Home">
+            <h1>Featured Items</h1>
+            <Carousel />
         </div>
     );
 }
