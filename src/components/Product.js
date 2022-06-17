@@ -1,9 +1,13 @@
 function Product(props) {
     return props.inShoppingCart ? (
         <div>
-            <img src={props.product.src} alt={props.product.name} />
+            <img
+                src={props.product.src}
+                alt={props.product.name}
+                className={props.product.className}
+            />
             <div>{props.product.name}</div>
-            <div>{props.product.price}</div>
+            <div>${props.product.price}</div>
             <div>
                 <div>Quantity: {props.product.quantityInCart}</div>
                 <div>
@@ -35,10 +39,14 @@ function Product(props) {
             </div>
         </div>
     ) : (
-        <div>
-            <img src={props.product.src} alt={props.altText} />
+        <div className="Product">
+            <img
+                src={props.product.src}
+                alt={props.product.name}
+                className={props.product.className}
+            />
             <div>{props.product.name}</div>
-            <div>{props.product.price}</div>
+            <div>${props.product.price}</div>
             <div>
                 <button
                     className="add-to-cart"

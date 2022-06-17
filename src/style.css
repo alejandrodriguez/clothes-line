@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Palanquin&display=swap");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Palanquin", sans-serif;
 }
 
 img {
@@ -16,7 +19,7 @@ nav {
     align-items: center;
     gap: 60px;
     padding: 20px 100px;
-    background-color: rgb(37, 37, 37);
+    background-color: black;
     color: white;
     font-size: 18px;
 }
@@ -32,4 +35,36 @@ nav a:visited {
 .cart-icon {
     flex: 1;
     text-align: right;
+}
+
+.Product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 100px auto;
+    box-shadow: 5px 5px 20px;
+    padding: 40px 30px;
+    gap: 5px;
+}
+
+button {
+    padding: 5px 10px;
+}
+
+.shirt {
+    object-position: 0px -90px;
+}
+
+.pants {
+    object-position: 0px -70px;
+}
+
+.shoes {
+    object-position: -20px 0px;
+}
+
+.suit {
+    object-position: 0px -80px;
 }

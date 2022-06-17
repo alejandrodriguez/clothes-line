@@ -14,42 +14,48 @@ import watchsrc from "./product-images/watch.jpg";
 function App() {
     const productsData = [
         {
-            name: "hat",
+            name: "Zebra Print Hat",
+            className: "hat",
             price: 20,
             src: hatsrc,
             id: 1,
             quantityInCart: 0
         },
         {
-            name: "shirt",
+            name: "Navy Blue Shirt",
+            className: "shirt",
             price: 30,
             src: shirtsrc,
             id: 2,
             quantityInCart: 0
         },
         {
-            name: "pants",
+            name: "Bell Bottom Pants",
+            className: "pants",
             price: 40,
             src: pantssrc,
             id: 3,
             quantityInCart: 0
         },
         {
-            name: "shoes",
+            name: "Black Boots",
+            className: "shoes",
             price: 60,
             src: shoessrc,
             id: 4,
             quantityInCart: 0
         },
         {
-            name: "suit",
+            name: "Gray Suit",
+            className: "suit",
             price: 150,
             src: suitsrc,
             id: 5,
             quantityInCart: 0
         },
         {
-            name: "watch",
+            name: "Luxury Watch",
+            className: "watch",
             price: 250,
             src: watchsrc,
             id: 6,
