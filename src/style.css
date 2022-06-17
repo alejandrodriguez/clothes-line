@@ -13,15 +13,20 @@ img {
     object-fit: cover;
 }
 
+.nav-wrapper {
+    width: 100%;
+    background-color: black;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 60px;
     padding: 20px 100px;
-    background-color: black;
     color: white;
     font-size: 18px;
+    width: 80vw;
+    margin: auto;
 }
 
 nav a {
@@ -32,9 +37,32 @@ nav a:visited {
     color: white;
 }
 
-.cart-icon {
+.home-link {
     flex: 1;
+}
+
+.shop-link {
+    flex: 1;
+}
+
+.store-title {
+    flex: 2;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cart-icon-wrapper {
+    flex: 2;
     text-align: right;
+    align-self: flex-end;
+}
+
+.cart-icon {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(256deg)
+        brightness(107%) contrast(105%);
+    width: 30px;
+    height: 30px;
 }
 
 .Product {
@@ -67,4 +95,19 @@ button {
 
 .suit {
     object-position: 0px -80px;
+}
+
+.products-in-cart {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 900;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 10px;
 }
