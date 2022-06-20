@@ -1,6 +1,9 @@
 function Product(props) {
     return props.inShoppingCart ? (
-        <div className="Product-In-Cart">
+        <div
+            className="Product-In-Cart"
+            data-testid={`Product-${props.product.id}`}
+        >
             <img
                 src={props.product.src}
                 alt={props.product.name}
@@ -14,7 +17,7 @@ function Product(props) {
                         props.handleQuantityChange("subtract", props.product)
                     }
                 >
-                    &#8722;
+                    -
                 </button>
                 <div>Quantity: {props.product.quantityInCart}</div>
 
@@ -23,7 +26,7 @@ function Product(props) {
                         props.handleQuantityChange("add", props.product)
                     }
                 >
-                    &#43;
+                    +
                 </button>
             </div>
             <button
@@ -34,7 +37,7 @@ function Product(props) {
             </button>
         </div>
     ) : (
-        <div className="Product">
+        <div className="Product" data-testid={`Product-${props.product.id}`}>
             <img
                 src={props.product.src}
                 alt={props.product.name}
