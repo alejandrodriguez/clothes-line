@@ -85,7 +85,9 @@ function App() {
     }
 
     function getProductsInCart() {
-        return products.filter(product => product.quantityInCart > 0).length;
+        return products.reduce((totalQuantity, product) => {
+            return totalQuantity + product.quantityInCart;
+        }, 0);
     }
 
     return (

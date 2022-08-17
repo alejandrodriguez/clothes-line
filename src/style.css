@@ -7,6 +7,10 @@
     font-family: "Palanquin", sans-serif;
 }
 
+body {
+    min-height: 100vh;
+}
+
 .Shop img {
     width: 500px;
     height: 500px;
@@ -56,6 +60,7 @@ nav a:visited {
     text-align: center;
     font-size: 25px;
     font-weight: bold;
+    min-width: max-content;
 }
 
 .cart-icon-wrapper {
@@ -77,7 +82,22 @@ nav a:visited {
     align-items: center;
     gap: 5px;
     margin: 100px auto;
-    width: fit-content;
+    max-width: fit-content;
+    position: relative;
+}
+
+.success-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: rgb(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    min-width: max-content;
 }
 
 .Product,
@@ -89,7 +109,7 @@ nav a:visited {
 
 .Product-In-Cart {
     margin: 50px auto;
-    width: max(50vw, 700px);
+    width: max(50vw, 800px);
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -156,7 +176,7 @@ nav a:visited {
 }
 
 .swiper {
-    width: 1200px;
+    max-width: 1200px;
     box-shadow: 5px 5px 25px;
 }
 
@@ -166,11 +186,51 @@ nav a:visited {
 }
 
 .swiper img {
-    width: 1200px;
+    width: min(1200px, 100vw);
 }
 
 .Home h1 {
     margin-bottom: 15px;
     text-align: center;
     font-size: 50px;
+}
+
+@media (max-width: 1200px) {
+    nav {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .swiper img {
+        width: 100vw;
+        height: 60vh;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 800px) {
+    nav {
+        padding: 10px 20px;
+        margin: 0;
+        width: 100%;
+        justify-content: space-between !important;
+    }
+
+    nav > * {
+        font-size: 18px !important;
+    }
+
+    .Product {
+        margin: 30px auto;
+    }
+
+    .Product img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .Product-In-Cart {
+        flex-direction: column;
+        padding-bottom: 60px;
+        width: 80vw;
+    }
 }
