@@ -36,6 +36,7 @@ nav {
     font-size: 18px;
     width: 80vw;
     margin: auto;
+    gap: 12px;
 }
 
 nav a {
@@ -67,6 +68,7 @@ nav a:visited {
     flex: 2;
     text-align: right;
     align-self: flex-end;
+    min-width: max-content;
 }
 
 .cart-icon {
